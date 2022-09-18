@@ -1,0 +1,504 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ html {
+     scroll-behavior: smooth;
+ }
+
+ body {
+     background-color: #1c1c1c;
+     font-family: 'Roboto Condensed', sans-serif;
+ }
+
+ header {
+     width: 100%;
+     padding: 10px;
+     background: #151515;
+     color: white;
+ }
+
+ nav {
+     max-width: 1200px;
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ nav img {
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+ }
+
+ nav h1 {
+     font-size: 30px;
+ }
+
+ ul {
+     width: 30%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ ul li {
+     list-style: none;
+     padding: 10px;
+     font-size: 1.3em;
+ }
+
+ ul li a {
+     text-decoration: none;
+     color: white;
+ }
+
+ ul li a:hover {
+     color: #399AAC;
+ }
+
+ /*principal*/
+
+ #container {
+     width: 100%;
+     height: 80vh;
+     margin-bottom: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-image: url(imagens/banner.png);
+     background-position: top left;
+     background-attachment: fixed;
+ }
+
+
+ .principal {
+     background-color: black;
+     max-width: 1200px;
+     width: 735px;
+     height: 350px;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     padding: 20px;
+     border-radius: 30px;
+     border: 2px solid #64e6e2;
+ }
+
+ .principal div {
+     padding-top: 30px;
+     height: 100%;
+     text-align: center;
+ }
+
+ .nome {
+     color: #399AAC;
+     font-size: 30px;
+ }
+
+ .dev {
+     color: #64D2E6;
+     margin-top: 30px;
+     font-size: 50px;
+ }
+
+ .curriculo {
+     display: inline-block;
+     width: 182px;
+     padding: 10px;
+     border-radius: 40px;
+     background-color: #6CCBF6;
+     text-align: center;
+     margin-top: 50px;
+     color: black;
+     font: 22px bold;
+     cursor: pointer;
+     transition: all 1s;
+ }
+
+ .curriculo:hover {
+     transform: scale(1.1);
+     background-color: #1C1C1C;
+     color: white;
+ }
+
+ /*Sobre mim*/
+.btn-topo{
+    background-color: #399AAC;
+    position: fixed;
+    width: 50px;
+    text-align: center;
+    bottom: 126px;
+    left: 15px;
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 1;
+    border: 1px solid black;
+    transition: all 1s;
+}
+
+.btn-topo:hover{
+    background-color: #6CCBF6;
+}
+ #sobre-mim {
+     width: 100%;
+     height: auto;
+     margin-bottom: 40px;
+ }
+
+ .info-mim {
+     max-width: 1000px;
+     width: 90%;
+     margin: auto;
+     padding: 40px;
+     background-color: #363636;
+ }
+
+ .info-mim h1 {
+     color: #399AAC;
+     margin-bottom: 20px;
+ }
+
+ .formacao {
+     margin: 20px 0px;
+ }
+
+ .paragrafo-mim {
+     width: 60%;
+ }
+
+ .info-mim p {
+     color: white;
+     font-size: 1.3em;
+ }
+
+ .redes-sociais {
+     margin: auto;
+     width: 70%;
+     padding: 20px;
+     display: flex;
+     justify-content: space-around;
+
+ }
+
+ .redes-sociais img {
+     width: 40px;
+     height: 40px;
+ }
+
+ .redes-sociais img:hover {
+     background-color: #399AAC;
+ }
+
+ .divisoria {
+     margin: 30px auto;
+     width: 40vh;
+     height: 2px;
+     background-color: #399AAC;
+ }
+
+ /*chonecimento*/
+
+ #Conhecimento {
+     width: 100%;
+     background-color: black;
+     padding: 1px;
+ }
+
+ .habilidades {
+     max-width: 1200px;
+     margin: 50px auto;
+ }
+
+ .titulo-conhecimento {
+     padding: 20px 20px;
+     font-size: 1.5em;
+     text-align: center;
+     color: white;
+ }
+
+ .card-img {
+     margin: 10px auto;
+     width: 64px;
+     height: 64px;
+ }
+
+ .card-img img {
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+ }
+
+ .cards {
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     padding: 10px 50px;
+     gap: 10px;
+ }
+
+ .card {
+     width: 30%;
+     margin-bottom: 50px;
+     background-color: #1C1C1C;
+     border-radius: 30px;
+     transition: all 600ms;
+ }
+
+ .card-descricao {
+     text-align: center;
+     padding: 1rem 2rem 2rem 2rem;
+ }
+
+ .card-descricao h1 {
+     margin-bottom: 10px;
+     color: white;
+     font-size: 1.3em;
+ }
+
+ .card-descricao p {
+     color: white;
+     font-size: 1.3em;
+     text-align: left;
+     text-indent: 1em;
+ }
+
+ .card:hover {
+     box-shadow: 4px 4px 4px #399AAC;
+     transform: scale(1.05);
+ }
+
+ /*Projetos*/
+ #projetos {
+     width: 100%;
+     height: auto;
+     padding: 10px 10px;
+     background-color: black;
+ }
+
+ #projetos h1 {
+     padding: 20px 20px;
+     font-size: 2em;
+     text-align: center;
+     color: white;
+ }
+
+ .projeto {
+     max-width: 1200px;
+     margin: auto;
+     background-color: #363636;
+     position: relative;
+     padding: 15px;
+     margin-bottom: 50px;
+     border: 2px solid #399AAC;
+ }
+
+ .galeria-wrapper {
+     overflow-x: auto;
+ }
+
+ .galeria {
+     display: flex;
+     flex-flow: row nowrap;
+     gap: 15px;
+ }
+
+ .seta-direita img,
+ .seta-esquerda img {
+     width: 40px;
+     height: 40px;
+ }
+
+ .seta-direita,
+ .seta-esquerda {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: auto;
+     bottom: 0;
+     text-align: center;
+     cursor: pointer;
+     border: none;
+     background: linear-gradient(to left, transparent 0%, black 200%);
+     opacity: 0.1;
+     transition: all 600ms ease-in-out;
+ }
+
+ .seta-direita {
+     left: auto;
+     right: 0;
+     bottom: 0;
+     background: linear-gradient(to right, transparent 0%, black 200%);
+ }
+
+ .seta-direita:hover,
+ .seta-esquerda:hover {
+     opacity: 1;
+ }
+
+ .item {
+     opacity: 0.6;
+     transition: all 600ms ease-in-out;
+ }
+
+ .current {
+
+     opacity: 1;
+ }
+
+ .galeria img {
+     width: 400px;
+     height: 250px;
+ }
+
+ /* This is from w3schools */
+ /* 
+https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+ /* Hide scrollbar for Chrome, Safari and Opera */
+ .galeria-wrapper::-webkit-scrollbar {
+     display: none;
+ }
+
+ /* Hide scrollbar for IE, Edge and Firefox */
+ .galeria-wrapper {
+     -ms-overflow-style: none;
+     /* IE and Edge */
+     scrollbar-width: none;
+     /* Firefox */
+ }
+
+ /*Contato*/
+
+ #contato {
+     width: 100%;
+     padding: 1px;
+     background-color: #D9D9D9;
+ }
+
+ #contato h1 {
+     padding: 20px 20px;
+     font-size: 2em;
+     text-align: center;
+     color: black;
+ }
+
+ .formulario {
+     max-width: 500px;
+     height: 450px;
+     padding: 50px 50px;
+     margin: 40px auto;
+     background-color: black;
+     border-radius: 20px;
+     box-shadow: 7px 8px 4px rgba(0, 0, 0, 0.694);
+ }
+
+ form{
+    display: flex;
+    flex-direction: column;
+ }
+
+ input, textarea{
+    border: none;
+    border-bottom: 2px solid #399AAC;
+    background-color: transparent;
+    padding: 18px;
+    margin:10px 0px;
+    outline: none;
+    color: white;
+ }
+
+ .mensagem{
+    height: 80px;
+    border-bottom: 2px solid #399AAC;
+ }
+
+ #contato button{
+    width: 80%;
+    margin: auto;
+    background-color: #399AAC;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 1s;
+ }
+.formulario .redes-sociais{
+   
+    padding: 8px;
+    margin-top: 20px;
+}
+
+.formulario .redes-sociais img{
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+ #contato button:hover{
+      background-color: #6CCBF6;
+      color: black;
+ }
+ 
+ /*Rodape*/
+
+ footer{
+    width: 100%;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    background-color: #151515;
+ }
+ /*Tablet*/
+ @media (max-width:768px) {
+     nav h1 {
+         display: none;
+     }
+
+     .paragrafo-mim {
+         width: 100%;
+     }
+
+     .card {
+         width: 40%;
+         margin-bottom: 50px;
+         border: 2px solid #64D2E6;
+     }
+
+     #container {
+         height: 100vh;
+         background-size: 100% 100%;
+     }
+
+     #projetos {
+         padding: 1px 1px;
+     }
+ }
+
+ /*Mobile*/
+ @media (max-width:570px) {
+     header img {
+         display: none;
+     }
+
+     nav ul {
+         width: 100%;
+     }
+
+     .card {
+         width: 100%;
+     }
+
+     #container {
+         height: 100vh;
+         background-size: 100% 100%;
+     }
+
+ }
