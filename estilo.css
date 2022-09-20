@@ -128,26 +128,27 @@
  }
 
  /*Sobre mim*/
-.btn-topo{
-    background-color: #399AAC;
-    position: fixed;
-    width: 50px;
-    text-align: center;
-    bottom: 126px;
-    left: 15px;
-    font-size: 2em;
-    text-decoration: none;
-    color: black;
-    border-radius: 50%;
-    padding: 10px;
-    z-index: 1;
-    border: 1px solid black;
-    transition: all 1s;
-}
+ .btn-topo {
+     background-color: #399AAC;
+     position: fixed;
+     width: 50px;
+     text-align: center;
+     bottom: 126px;
+     left: 15px;
+     font-size: 2em;
+     text-decoration: none;
+     color: black;
+     border-radius: 50%;
+     padding: 10px;
+     z-index: 1;
+     border: 1px solid black;
+     transition: all 1s;
+ }
 
-.btn-topo:hover{
-    background-color: #6CCBF6;
-}
+ .btn-topo:hover {
+     background-color: #6CCBF6;
+ }
+
  #sobre-mim {
      width: 100%;
      height: auto;
@@ -192,6 +193,8 @@
  .redes-sociais img {
      width: 40px;
      height: 40px;
+     border-radius: 50%;
+     transition: all 600ms;
  }
 
  .redes-sociais img:hover {
@@ -305,6 +308,14 @@
      overflow-x: auto;
  }
 
+ /*.galeria-wrapper img {
+     filter: grayscale(100%);
+ }
+
+ .galeria-wrapper img:hover {
+     filter: grayscale(0%);
+ }*/
+
  .galeria {
      display: flex;
      flex-flow: row nowrap;
@@ -400,62 +411,66 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
      box-shadow: 7px 8px 4px rgba(0, 0, 0, 0.694);
  }
 
- form{
-    display: flex;
-    flex-direction: column;
+ form {
+     display: flex;
+     flex-direction: column;
  }
 
- input, textarea{
-    border: none;
-    border-bottom: 2px solid #399AAC;
-    background-color: transparent;
-    padding: 18px;
-    margin:10px 0px;
-    outline: none;
-    color: white;
+ input,
+ textarea {
+     border: none;
+     border-bottom: 2px solid #399AAC;
+     background-color: transparent;
+     padding: 18px;
+     margin: 10px 0px;
+     outline: none;
+     color: white;
  }
 
- .mensagem{
-    height: 80px;
-    border-bottom: 2px solid #399AAC;
+ .mensagem {
+     height: 80px;
+     border-bottom: 2px solid #399AAC;
  }
 
- #contato button{
-    width: 80%;
-    margin: auto;
-    background-color: #399AAC;
-    color: white;
-    padding: 10px;
-    border-radius: 20px;
-    margin-top: 20px;
-    cursor: pointer;
-    transition: all 1s;
+ #contato button {
+     width: 80%;
+     margin: auto;
+     background-color: #399AAC;
+     color: white;
+     padding: 10px;
+     border-radius: 20px;
+     margin-top: 20px;
+     cursor: pointer;
+     transition: all 1s;
  }
-.formulario .redes-sociais{
-   
-    padding: 8px;
-    margin-top: 20px;
-}
 
-.formulario .redes-sociais img{
-    background-color: aliceblue;
-    border-radius: 50%;
-}
- #contato button:hover{
-      background-color: #6CCBF6;
-      color: black;
+ .formulario .redes-sociais {
+
+     padding: 8px;
+     margin-top: 20px;
  }
- 
+
+ .formulario .redes-sociais img {
+     background-color: aliceblue;
+     border-radius: 50%;
+ }
+
+ #contato button:hover {
+     background-color: #6CCBF6;
+     color: black;
+ }
+
  /*Rodape*/
 
- footer{
-    width: 100%;
-    padding: 20px;
-    color: white;
-    text-align: center;
-    font-size: 0.8em;
-    background-color: #151515;
+ footer {
+     width: 100%;
+     padding: 20px;
+     color: white;
+     text-align: center;
+     font-size: 0.8em;
+     background-color: #151515;
  }
+
  /*Tablet*/
  @media (max-width:768px) {
      nav h1 {
@@ -480,6 +495,12 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
      #projetos {
          padding: 1px 1px;
      }
+
+     
+ .galeria-wrapper img {
+    filter: none;
+}
+
  }
 
  /*Mobile*/
@@ -499,6 +520,11 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
      #container {
          height: 100vh;
          background-size: 100% 100%;
+     }
+
+     header {
+         position: fixed;
+         z-index: 2;
      }
 
  }
