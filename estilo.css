@@ -208,7 +208,7 @@
      background-color: #399AAC;
  }
 
- /*chonecimento*/
+ /*Conhecimento*/
 
  #Conhecimento {
      width: 100%;
@@ -284,7 +284,7 @@
      width: 100%;
      height: auto;
      padding: 10px 10px;
-     background-color: black;
+     background-color: #363636;
  }
 
  #projetos h1 {
@@ -294,97 +294,114 @@
      color: white;
  }
 
- .projeto {
-     max-width: 1200px;
-     margin: auto;
-     background-color: #363636;
-     position: relative;
-     padding: 15px;
-     margin-bottom: 50px;
-     border: 2px solid #399AAC;
- }
+ .container {
+    position: relative;
+    padding: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
- .galeria-wrapper {
-     overflow-x: auto;
- }
+.gallery-wrapper {
+    overflow-x: auto;
+}
 
- /*.galeria-wrapper img {
-     filter: grayscale(100%);
- }
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 20px;
+    line-height: 250px;
+    width: 40px;
+    color: #fff;
+    transition: all 600ms ease-in-out;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.1;
+    cursor: pointer;
+    border: none;
+}
 
- .galeria-wrapper img:hover {
-     filter: grayscale(0%);
- }*/
+.arrow-left:hover,
+.arrow-right:hover {
+    opacity: 1;
+}
 
- .galeria {
-     display: flex;
-     flex-flow: row nowrap;
-     gap: 15px;
- }
+.arrow-right {
+    right: 0;
+    left: auto;
+    text-align: right;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+}
 
- .seta-direita img,
- .seta-esquerda img {
-     width: 40px;
-     height: 40px;
- }
+.gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+}
 
- .seta-direita,
- .seta-esquerda {
-     position: absolute;
-     top: 0;
-     left: 0;
-     right: auto;
-     bottom: 0;
-     text-align: center;
-     cursor: pointer;
-     border: none;
-     background: linear-gradient(to left, transparent 0%, black 200%);
-     opacity: 0.1;
-     transition: all 600ms ease-in-out;
- }
+.item {
+    width: 400px;
+    max-height: 600px;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    opacity: 0.5;
+    background-color: rgb(29, 27, 27);
+    border-radius: 8px;
+}
 
- .seta-direita {
-     left: auto;
-     right: 0;
-     bottom: 0;
-     background: linear-gradient(to right, transparent 0%, black 200%);
- }
+.item img {
+    width: 100%;
+    height: 40%;
+    border-radius:10px;
+}
 
- .seta-direita:hover,
- .seta-esquerda:hover {
-     opacity: 1;
- }
+.body-item {
+    padding: 20px;
+}
 
- .item {
-     opacity: 0.6;
-     transition: all 600ms ease-in-out;
- }
+.body-item p{
+    color: white;
+    font-size: 1.2em;
+}
 
- .current {
+.body-item a {
+    display: block;
+    width: 96%;
+    text-align: center;
+    color: #151515;
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 40px 0px;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #6CCBF6;
+}
 
-     opacity: 1;
- }
+.current-item {
+    opacity: 1;
+}
 
- .galeria img {
-     width: 400px;
-     height: 250px;
- }
-
- /* This is from w3schools */
- /* 
+/* This is from w3schools */
+/* 
 https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
- /* Hide scrollbar for Chrome, Safari and Opera */
- .galeria-wrapper::-webkit-scrollbar {
-     display: none;
- }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.gallery-wrapper::-webkit-scrollbar {
+    display: none;
+}
 
- /* Hide scrollbar for IE, Edge and Firefox */
- .galeria-wrapper {
-     -ms-overflow-style: none;
-     /* IE and Edge */
-     scrollbar-width: none;
-     /* Firefox */
- }
+/* Hide scrollbar for IE, Edge and Firefox */
+.gallery-wrapper {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+
+
 
  /*Contato*/
 
