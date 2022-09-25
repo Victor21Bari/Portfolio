@@ -34,6 +34,7 @@
      width: 80px;
      height: 80px;
      border-radius: 50%;
+     filter: drop-shadow(3px 3px 1px #399AAC);
  }
 
  nav h1 {
@@ -242,6 +243,7 @@
      display: flex;
      justify-content: space-around;
      flex-wrap: wrap;
+     gap: 10px;
      padding: 10px 50px;
  }
 
@@ -299,7 +301,7 @@
  }
 
  .container {
-     padding: 15px;
+     padding: 1rem;
      max-width: 1200px;
      margin: 0 auto;
  }
@@ -361,9 +363,10 @@
      border: 1px solid black;
      transition: all 600ms;
  }
-.body-item a:hover{
-background-color: #403f3f;
-}
+
+ .body-item a:hover {
+     background-color: #403f3f;
+ }
 
  /*Contato*/
 
@@ -375,7 +378,7 @@ background-color: #403f3f;
 
  #contato h1 {
      padding: 20px 20px;
-     font-size: 2em;
+     font-size: 2rem;
      text-align: center;
      color: black;
  }
@@ -442,14 +445,23 @@ background-color: #403f3f;
      padding: 20px;
      color: white;
      text-align: center;
-     font-size: 0.8em;
+     font-size: 0.8rem;
      background-color: #151515;
  }
 
  /*Tablet*/
  @media (max-width:768px) {
-     nav h1 {
+    header {
+        position: fixed;
+        z-index: 2;
+    }
+
+     header img {
          display: none;
+     }
+
+     nav ul {
+         width: 100%;
      }
 
      .info-mim p {
@@ -480,7 +492,13 @@ background-color: #403f3f;
  }
 
  /*Mobile*/
- @media (max-width:570px) {
+ @media (max-width:590px) {
+
+     header {
+         position: fixed;
+         z-index: 2;
+     }
+
      header img {
          display: none;
      }
@@ -504,11 +522,6 @@ background-color: #403f3f;
          transition: all 600ms ease-in-out;
          background-color: rgb(29, 27, 27);
          border-radius: 8px;
-     }
-
-     header {
-         position: fixed;
-         z-index: 2;
      }
 
  }
