@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastrar.css">
+    <link rel="icon" href="imagens/icone-cadastro.png">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <header>
+        <div class="link">
+            <a href="login.html">Voltar</a>
+        </div>
+    </header>
+
+    <div class="topo">
+        <div class="principal">
+            <h1>Cadastrar</h1>
+            <form action="" autocomplete="off">
+                <label for="nome">Nome</label>
+                <div>
+                    <input class="input nome" type="name" nome name="nome" required>
+                    <span class="error">Digite um nome válido</span>
+                </div>
+                <label for="sobrenome">Sobrenome</label>
+                <div>
+                    <input class="input sobrenome" type="name" nome name="sobrenome" required>
+                    <span class="error">Digite um nome válido</span>
+                </div>
+                <label for="Email">Email</label>
+                <div>
+                    <input class="input email" type="Email nome" name="Email" required>
+                    <span class="error">Digite um Emial válido</span>
+                </div>
+                <label for="senha">Senha</label>
+                <div>
+                    <input class="input senha" type="passw nomeord" name="senha" required>
+                    <span class="error">Digite uma senha válido</span>
+                </div>
+                <label for="idade">Idade</label>
+                <div>
+                    <input class="input idade" type="number" name="idade" required>
+                    <span class="error">Digite uma idade válida</span>
+                </div>
+                <p>Sexo:</p>
+                <div class="sexo">
+                    <div>
+                        <input type="radio" name="sexo" value="M" id="M" required>
+                        <label for="M">Masculino</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sexo" value="F" id="F" required>
+                        <label for="F">Feminino</label>
+                    </div>
+                    
+                </div>
+                <div>
+                    <button type="submit">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

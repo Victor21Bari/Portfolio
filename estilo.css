@@ -98,23 +98,23 @@
      text-align: center;
  }
 
- .texto-nomes {
+ .texto-des {
      width: 80%;
      margin: auto;
      margin-top: 50px;
      overflow: hidden;
      white-space: nowrap;
      border-right: 3px solid #64D2E6;
-     animation: tipo 4s steps(22) 2, blink .4s step-end infinite alternate;
+     animation: titulo-dev 4s steps(22) 2, borda .4s step-end infinite alternate;
  }
 
- @keyframes tipo {
+ @keyframes titulo-dev {
      from {
          width: 0%;
      }
  }
 
- @keyframes blink {
+ @keyframes borda {
      50% {
          border-color: transparent;
      }
@@ -122,7 +122,7 @@
 
  .meu-nome {
      color: #399AAC;
-     font-size: 1.6rem;
+     font-size: 1.5rem;
  }
 
  .dev {
@@ -514,12 +514,13 @@
      }
 
      .dev {
-        font-size: 2rem;
-    }
+         font-size: 2rem;
+     }
 
-    .texto {
-        width: 100%;
-    }
+     .texto-des {
+         width: 100%;
+     }
+
  }
 
  /*Mobile*/
