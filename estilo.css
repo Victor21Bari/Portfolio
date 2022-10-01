@@ -33,8 +33,7 @@
  nav img {
      width: 80px;
      height: 80px;
-     border-radius: 50%;
-     filter: drop-shadow(3px 3px 1px #399AAC);
+     filter: drop-shadow(1px 1px 1px #399AAC);
  }
 
  nav h1 {
