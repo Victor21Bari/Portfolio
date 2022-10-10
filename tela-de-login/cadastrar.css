@@ -72,28 +72,28 @@ form {
    padding-left: 2rem;
    background-color: #D9D9D9;
    border-radius: 4px;
-   border: 1px solid transparent;
+   border: 2px solid transparent;
    outline: none;
-   background-image: url(imagens/icone-usuario.png);
+   background-image: url(img/icone-usuario.png);
    background-repeat: no-repeat;
    background-position: 10px;
 }
 
 .sobrenome{
-    background-image: url(imagens/icone-usuario.png);
+    background-image: url(img/icone-usuario.png);
 }
 
 .email{
-    background-image: url(imagens/icone-email.png);
+    background-image: url(img/icone-email.png);
     background-size: 21px;
 }
 
 .senha{
-    background-image: url(imagens/icone-cadeado.png);
+    background-image: url(img/icone-cadeado.png);
 }
 
 .idade{
-    background-image: url(imagens/icone-idade.png);
+    background-image: url(img/icone-idade.png);
     background-size: 24px;
 }
 
@@ -127,7 +127,7 @@ button:hover{
 }
 
 form:invalid button {
-    opacity: 0.3;
+    opacity: 0.3; 
     pointer-events: none;
   }
 

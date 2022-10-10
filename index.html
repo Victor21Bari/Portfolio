@@ -16,10 +16,13 @@
     <header>
         <nav>
             <img src="imagens/Logo_semfundo_victorB.png">
-            <ul>
-                <li><a href="#sobre-mim">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
+            <button id="botaoMenu">
+                <span id="menuHamburguer"></span>
+            </button>
+            <ul id="linksMenu">
+                <li><a id="aMenu1" href="#sobre-mim">Sobre</a></li>
+                <li><a  id="aMenu2" href="#projetos">Projetos</a></li>
+                <li><a  id="aMenu3" href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -195,7 +198,8 @@
                         <img src="imagens/Tela-de-login.jpeg">
                         <div class="body-item">
                             <h2>Tela de login</h2>
-                            <p>Tela de login e cadastro feita com Html, css e Javascript. O cadastro possui uma validação dos compos feita com javascrip. </p>
+                            <p>Tela de login e cadastro feita com Html, css e Javascript. O cadastro possui uma
+                                validação dos compos feita com javascrip. </p>
                             <a href="tela-de-login/login.html">Vizualizar projeto</a>
                         </div>
                     </div>
@@ -234,7 +238,22 @@
         </footer>
 
     </main>
-    <script src="script.js"></script>
+    <script>
+        const botao = document.getElementById('botaoMenu')
+
+        botao.addEventListener('click', () => {
+            const ul = document.getElementById('linksMenu')
+            let a1 = document.getElementById('aMenu1');
+            let a2 = document.getElementById('aMenu2');
+            let a3 = document.getElementById('aMenu3');
+            ul.classList.toggle('active')
+            ul.addEventListener('click', (e) => {
+                if (e.target ==  a1 || e.target == a2|| e.target == a3) {
+                    ul.classList.remove('active');
+                }
+            })
+        })
+    </script>
 </body>
 
 </html>
