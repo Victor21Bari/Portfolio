@@ -45,7 +45,7 @@
         <!--Sobre mim-->
         <section id="sobre-mim">
             <a href="#container" class="btn-topo">&uarr;</a>
-            <div class="info-mim">
+            <div class="info-mim" data-animacao="left">
                 <div class="descricao">
                     <h1>Sobre mim</h1>
                     <p class="paragrafo-mim">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -85,7 +85,7 @@
                 </div>
                 <!--Cards-->
                 <div class="cards">
-                    <div class="card">
+                    <div class="card"  data-animacao="left">
                         <div class="card-img">
                             <img src="imagens/logo-html.png">
                         </div>
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                     <!--card 2 -->
-                    <div class="card">
+                    <div class="card"  data-animacao="left">
                         <div class="card-img">
                             <img src="imagens/logo-css.png">
                         </div>
@@ -108,7 +108,7 @@
                         </div>
                     </div>
                     <!--card 3 -->
-                    <div class="card">
+                    <div class="card"  data-animacao="left">
                         <div class="card-img">
                             <img src="imagens/logo-js.png">
                         </div>
@@ -120,7 +120,7 @@
                         </div>
                     </div>
                     <!--card 4 -->
-                    <div class="card">
+                    <div class="card"  data-animacao="left">
                         <div class="card-img">
                             <img src="imagens/logo-git.png">
                         </div>
@@ -133,7 +133,7 @@
                         </div>
                     </div>
                     <!--card 5 -->
-                    <div class="card">
+                    <div class="card"  data-animacao="left">
                         <div class="card-img">
                             <img src="imagens/logo-bots.jpg">
                         </div>
@@ -146,7 +146,7 @@
                         </div>
                     </div>
                     <!--card 6 -->
-                    <div class="card">
+                    <div class="card"  data-animacao="left">
                         <div class="card-img">
                             <img src="./imagens/logo-github.png">
                         </div>
@@ -252,6 +252,26 @@
                     ul.classList.remove('active');
                 }
             })
+        })
+
+        const target = document.querySelectorAll(' [data-animacao]');
+        const animacaoClasse = 'animacao';
+
+        function animacaoScroll(){
+         const windowTop = window.pageYOffset + 500 ;
+         console.log(windowTop)
+         target.forEach(function(e){
+            if(windowTop > e.offsetTop){
+                e.classList.add(animacaoClasse)
+            }else{
+                e.classList.remove(animacaoClasse)
+            }
+            console.log(e.offsetTop);
+         })
+        }
+        animacaoScroll();
+        window.addEventListener('scroll', function(){
+            animacaoScroll()
         })
     </script>
 </body>

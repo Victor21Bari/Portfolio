@@ -234,6 +234,20 @@
      background-color: #399AAC;
  }
 
+ [data-animacao]{
+    opacity: 0;
+    transition: 0.4s;
+ }
+
+ [data-animacao="left"]{
+  transform: translate3d(-100px,0,0);
+ }
+
+ [data-animacao].animacao{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+ }
+
  /*Conhecimento*/
 
  #Conhecimento {
@@ -502,7 +516,7 @@
 
      #linksMenu.active {
          visibility: visible;
-         height: 32vh;
+         height: 100vh;
          display: block;
      }
 
@@ -567,7 +581,7 @@
      }
 
      .texto-des {
-         width: 100%;
+         width: 90%;
      }
 
  }
