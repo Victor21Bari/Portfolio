@@ -581,7 +581,7 @@
      }
 
      .texto-des {
-         width: 90%;
+         width: 44%;
      }
 
  }
@@ -610,5 +610,12 @@
          background-color: rgb(29, 27, 27);
          border-radius: 8px;
      }
+
+     .dev {
+        font-size: 1.7rem;
+    }
+     .texto-des {
+        width: 86%;
+    }
 
  }

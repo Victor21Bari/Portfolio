@@ -259,14 +259,14 @@
 
         function animacaoScroll(){
          const windowTop = window.pageYOffset + 500 ;
-         console.log(windowTop)
+         //console.log(windowTop)
          target.forEach(function(e){
             if(windowTop > e.offsetTop){
                 e.classList.add(animacaoClasse)
             }else{
                 e.classList.remove(animacaoClasse)
             }
-            console.log(e.offsetTop);
+            //console.log(e.offsetTop);
          })
         }
         animacaoScroll();
