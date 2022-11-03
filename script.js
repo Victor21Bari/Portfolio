@@ -2,6 +2,9 @@ const botao = document.getElementById('botaoMenu')
 
 botao.addEventListener('click', () => {
     const ul = document.getElementById('linksMenu')
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('att')
+    console.log(nav);
     let a1 = document.getElementById('aMenu1');
     let a2 = document.getElementById('aMenu2');
     let a3 = document.getElementById('aMenu3');
@@ -37,7 +40,6 @@ function horaDia(){
     const tempo = document.getElementById('tempo')
     let data = new Date();
     let hora = data.getHours();
-    console.log(data, hora)
 
     if (hora >= 0  && hora < 12) {
         //Bom dia  
