@@ -12,8 +12,8 @@
     <title>Portifolio - Victor Baricelli</title>
 </head>
 
-<body>
-    <header>
+<body onload="horaDia()">
+    <header id="header">
         <nav>
             <img src="imagens/Logo_semfundo_victorB.png">
             <button id="botaoMenu">
@@ -44,22 +44,14 @@
         <div class="divisoria"></div>
         <!--Sobre mim-->
         <section id="sobre-mim">
-            <a href="#container" class="btn-topo">&uarr;</a>
+            <a href="#header" class="btn-topo">&uarr;</a>
             <div class="info-mim" data-animacao="left">
                 <div class="descricao">
                     <h1>Sobre mim</h1>
-                    <p class="paragrafo-mim">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been
-                        the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                        type
-                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                        the
-                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-                        1960s
-                        with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-                        desktop
-                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p class="paragrafo-mim"><span id="tempo"></span>Sou Victor Baricelli, tenho 18 anos e moro na cidade de Santo André/SP. Este ano entrei na Faculdade Mackenzie, no curso Análise de desenvolvimento de sistemas. Gosto muito da área de tecnologia, desenvolver aplicações web e estar sempre me atualizando.
+                        Estou no 2º semestre da faculdade, sou esforçado e muito interessado na busca de novos conhecimentos.
+                        No momento não tenho experiência profissional. Enquanto aguardo uma oportunidade de trabalho, realizo cursos e projetos.
+                        Gostaria de uma oportunidade nessa conceituada empresa para colocar em prática meu aprendizado e ser um profissional de destaque.</p>
                 </div>
 
                 <div class="formacao">
@@ -170,8 +162,8 @@
                         <img src="imagens/formulario.jpeg">
                         <div class="body-item">
                             <h2>Formulário</h2>
-                            <p>Formulario de contato responsivo com campos de: email, senha e texto, feito com Html e
-                                Css</p>
+                            <p>Formulário de contato responsivo com campos de: email, nome e texto, feito com Html e
+                                Css.</p>
                             <a href="formulario/form.html">Vizualizar projeto</a>
                         </div>
                     </div>
@@ -189,8 +181,7 @@
                         <img src="imagens/homepage.jpeg">
                         <div class="body-item">
                             <h2>Landingpage</h2>
-                            <p>rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            <p>DonaPerola é uma landinpage para eventos sobre comidas gourmet. Feito com html, css e javascrip.</p>
                             <a href="homepage/homepage.html">Vizualizar projeto</a>
                         </div>
                     </div>
@@ -235,46 +226,10 @@
         </section>
 
         <footer>
-            <h1>Victor Baricelli &copy; 2022</h1>
+            <h3>Victor Baricelli &copy; 2022</h3>
         </footer>
 
     </main>
-    <script>
-        const botao = document.getElementById('botaoMenu')
-
-        botao.addEventListener('click', () => {
-            const ul = document.getElementById('linksMenu')
-            let a1 = document.getElementById('aMenu1');
-            let a2 = document.getElementById('aMenu2');
-            let a3 = document.getElementById('aMenu3');
-            ul.classList.toggle('active')
-            ul.addEventListener('click', (e) => {
-                if (e.target ==  a1 || e.target == a2|| e.target == a3) {
-                    ul.classList.remove('active');
-                }
-            })
-        })
-
-        const target = document.querySelectorAll(' [data-animacao]');
-        const animacaoClasse = 'animacao';
-
-        function animacaoScroll(){
-         const windowTop = window.pageYOffset + 500 ;
-        //  console.log(windowTop)
-         target.forEach(function(e){
-            if(windowTop > e.offsetTop){
-                e.classList.add(animacaoClasse)
-            }else{
-                e.classList.remove(animacaoClasse)
-            }
-            //console.log(e.offsetTop);
-         })
-        }
-        animacaoScroll();
-        window.addEventListener('scroll', function(){
-            animacaoScroll()
-        })
-    </script>
+    <script src="script.js"></script>
 </body>
-
 </html>

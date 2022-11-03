@@ -15,11 +15,12 @@
      font-family: 'Roboto Condensed', sans-serif;
  }
 
- header {
+ #header {
      width: 100%;
      padding: 10px;
      background: #151515;
      color: white;
+     z-index: 10;
  }
 
  nav {
@@ -202,9 +203,14 @@
  }
 
  .info-mim p {
-     width: 60%;
+     width: 75%;
      color: white;
      font-size: 1.3rem;
+     text-align: left;
+ }
+
+ #tempo {
+     color: #ccc;
  }
 
  .redes-sociais {
@@ -234,18 +240,18 @@
      background-color: #399AAC;
  }
 
- [data-animacao]{
-    opacity: 0;
-    transition: 0.4s;
+ [data-animacao] {
+     opacity: 0;
+     transition: 0.4s;
  }
 
- [data-animacao="left"]{
-  transform: translate3d(-100px,0,0);
+ [data-animacao="left"] {
+     transform: translate3d(-100px, 0, 0);
  }
 
- [data-animacao].animacao{
-    opacity: 1;
-    transform: translate3d(0,0,0);
+ [data-animacao].animacao {
+     opacity: 1;
+     transform: translate3d(0, 0, 0);
  }
 
  /*Conhecimento*/
@@ -486,13 +492,12 @@
      padding: 20px;
      color: white;
      text-align: center;
-     font-size: 0.8rem;
      background-color: #151515;
  }
 
  /*Tablet*/
  @media (max-width:768px) {
-     header {
+     #header {
          position: fixed;
          z-index: 2;
      }
@@ -589,7 +594,7 @@
  /*Mobile*/
  @media (max-width:590px) {
 
-     header {
+     #header {
          position: fixed;
          z-index: 2;
      }
@@ -612,10 +617,21 @@
      }
 
      .dev {
-        font-size: 1.6rem;
-    }
+         font-size: 1.6rem;
+     }
+
      .texto-des {
-        width: 86%;
-    }
+         width: 86%;
+     }
+
+     .formulario {
+         box-shadow: none;
+     }
+
+     nav img {
+         width: 70px;
+         height: 70px;
+     }
+
 
  }
