@@ -12,6 +12,7 @@ botao.addEventListener('click', () => {
     ul.addEventListener('click', (e) => {
         if (e.target ==  a1 || e.target == a2|| e.target == a3) {
             ul.classList.remove('active');
+            nav.classList.remove('att');
         }
     })
 })
